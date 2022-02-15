@@ -36,7 +36,7 @@ static void step_once(int stepGPIO, int delay) {
 }
 
 static void set_direction(int direction){
-    /* 0 for UP, 1 for DOWN */
+    /* 1 for UP, 0 for DOWN */
     enum Setup gpio_pin_dir = DIR;
     gpio_put(gpio_pin_dir, direction);
     busy_wait_ms(500);
@@ -53,7 +53,6 @@ static void run (int gpio_pin_ena, int gpio_pin_pul, int step_delay, int steps_t
     gpio_put(gpio_pin_ena, 1);
 }
 int main() {
-    /* direction 1 for UP, 0 for DOWN */
     enum Setup step_delay = DELAY;
     enum Setup step_count = STEPS;
     enum Setup gpio_pin_pul = PUL;
