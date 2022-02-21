@@ -9,13 +9,13 @@ enum Setup {
     ENA = 14,
     BTN_UP = 5,
     BTN_DOWN = 3,
-    /* Delay in us, i.e. 1ms = 1000 us. Doesn't work under 300 */
-    DELAY = 300,
+    /* Delay in us, i.e. 1ms = 1000 us. Doesn't work under 280 */
+    DELAY = 280,
     /* Number of steps, 400 steps for full rotation */
     STEPS = 30000,
 };
 
-int up_flag = 0, down_flag = 1, moving_flag = 0;
+int up_flag = 0, down_flag = 0, moving_flag = 0;
 
 static void setup_pins_out(int pin1, int pin2, int pin3) {
     gpio_init(pin1);
@@ -45,9 +45,9 @@ static void setup_pins_in(int pin1, int pin2) {
 static void step_once(int stepGPIO, int delay) {
     gpio_put(stepGPIO, 1);
     /* busy_wait is faster than sleep() */
-    busy_wait_us(delay);
+    sleep_us(delay);
     gpio_put(stepGPIO, 0);
-    busy_wait_us(delay);
+    sleep_us(delay);
 }
 
 static void set_direction(int direction){

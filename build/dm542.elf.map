@@ -198,8 +198,6 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.repeating_timer_callback
                 0x0000000000000000       0x1c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- .text.sleep_until_callback
-                0x0000000000000000       0x30 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_dump_key
                 0x0000000000000000       0x34 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_get_default
@@ -208,8 +206,6 @@ Discarded input sections
                 0x0000000000000000       0x6c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_destroy
                 0x0000000000000000       0x44 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- .text.alarm_pool_add_alarm_at
-                0x0000000000000000      0x19c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_cancel_alarm
                 0x0000000000000000       0x70 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_hardware_alarm_num
@@ -222,8 +218,6 @@ Discarded input sections
                 0x0000000000000000       0x34 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.sleep_until
                 0x0000000000000000       0xc4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- .text.sleep_us
-                0x0000000000000000       0xe8 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.sleep_ms
                 0x0000000000000000       0x38 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.best_effort_wfe_or_timeout
@@ -259,8 +253,6 @@ Discarded input sections
                 0x0000000000000000       0x6c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.busy_wait_ms
                 0x0000000000000000       0x90 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .text.busy_wait_until
-                0x0000000000000000       0x20 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_sync/sem.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_sync/sem.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_sync/sem.c.obj
@@ -1478,9 +1470,9 @@ Discarded input sections
                 0x0000000000000000       0x80 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
  .time_critical.flash_range_program
                 0x0000000000000000       0x80 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .text          0x0000000000000000        0x0 /tmp/ccJ4zf5K.o
- .data          0x0000000000000000        0x0 /tmp/ccJ4zf5K.o
- .bss           0x0000000000000000        0x0 /tmp/ccJ4zf5K.o
+ .text          0x0000000000000000        0x0 /tmp/ccw6Ccow.o
+ .data          0x0000000000000000        0x0 /tmp/ccw6Ccow.o
+ .bss           0x0000000000000000        0x0 /tmp/ccw6Ccow.o
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atexit.o)
@@ -1701,11 +1693,11 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/ccJ4zf5K.o
+ .boot2         0x0000000010000000      0x100 /tmp/ccw6Ccow.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x0000000010000100     0x1fd8
+.text           0x0000000010000100     0x22a8
                 0x0000000010000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x0000000010000100       0xd4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1791,164 +1783,174 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  .text.timer_pool_entry_comparator
                 0x00000000100005a8       0x34 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
                 0x00000000100005a8                timer_pool_entry_comparator
+ .text.sleep_until_callback
+                0x00000000100005dc       0x30 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.add_alarm_under_lock
-                0x00000000100005dc      0x114 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x000000001000060c      0x114 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x00000000100006f0      0x1d0 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000720      0x1d0 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x00000000100008c0       0x64 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x00000000100008c0                alarm_pool_init_default
+                0x00000000100008f0       0x64 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100008f0                alarm_pool_init_default
+ .text.alarm_pool_add_alarm_at
+                0x0000000010000954      0x19c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000954                alarm_pool_add_alarm_at
+ .text.sleep_us
+                0x0000000010000af0       0xe8 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000af0                sleep_us
  .text.hardware_alarm_irq_handler
-                0x0000000010000924       0xb0 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010000bd8       0xb0 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x00000000100009d4       0x18 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100009d4                hardware_alarm_claim
+                0x0000000010000c88       0x18 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010000c88                hardware_alarm_claim
  .text.time_us_64
-                0x00000000100009ec       0x18 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100009ec                time_us_64
+                0x0000000010000ca0       0x18 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010000ca0                time_us_64
  .text.busy_wait_us
-                0x0000000010000a04       0x60 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010000a04                busy_wait_us
+                0x0000000010000cb8       0x60 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010000cb8                busy_wait_us
+ .text.busy_wait_until
+                0x0000000010000d18       0x20 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010000d18                busy_wait_until
  .text.hardware_alarm_set_callback
-                0x0000000010000a64       0x8c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010000a64                hardware_alarm_set_callback
+                0x0000000010000d38       0x8c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010000d38                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x0000000010000af0       0xe8 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010000af0                hardware_alarm_set_target
+                0x0000000010000dc4       0xe8 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010000dc4                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x0000000010000bd8       0x40 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010000bd8                hardware_alarm_cancel
+                0x0000000010000eac       0x40 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010000eac                hardware_alarm_cancel
  .text.lock_init
-                0x0000000010000c18       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x0000000010000c18                lock_init
+                0x0000000010000eec       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x0000000010000eec                lock_init
  .text.mutex_init
-                0x0000000010000c28       0x1c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000010000c28                mutex_init
+                0x0000000010000efc       0x1c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000010000efc                mutex_init
  .text.recursive_mutex_init
-                0x0000000010000c44       0x1c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000010000c44                recursive_mutex_init
+                0x0000000010000f18       0x1c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000010000f18                recursive_mutex_init
  .text.ph_merge_nodes
-                0x0000000010000c60       0x5c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010000f34       0x5c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_post_alloc_init
-                0x0000000010000cbc      0x1b8 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010000cbc                ph_post_alloc_init
+                0x0000000010000f90      0x1b8 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010000f90                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x0000000010000e74       0x4c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010000e74                ph_merge_two_pass
+                0x0000000010001148       0x4c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001148                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x0000000010000ec0      0x1b8 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001194      0x1b8 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x0000000010001078      0x1bc CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001078                ph_remove_head
+                0x000000001000134c      0x1bc CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x000000001000134c                ph_remove_head
  .text.ph_remove_and_free_node
-                0x0000000010001234       0x7c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001234                ph_remove_and_free_node
+                0x0000000010001508       0x7c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001508                ph_remove_and_free_node
  .text.runtime_init
-                0x00000000100012b0       0xf4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x00000000100012b0                runtime_init
- .text.exit     0x00000000100013a4        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x00000000100013a4                exit
- .text.panic    0x00000000100013a8       0x30 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x00000000100013a8                panic
+                0x0000000010001584       0xf4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001584                runtime_init
+ .text.exit     0x0000000010001678        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001678                exit
+ .text.panic    0x000000001000167c       0x30 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x000000001000167c                panic
  .text.hard_assertion_failure
-                0x00000000100013d8        0xc CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x00000000100013d8                hard_assertion_failure
+                0x00000000100016ac        0xc CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000100016ac                hard_assertion_failure
  .text.clocks_init
-                0x00000000100013e4      0x2c0 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x00000000100013e4                clocks_init
+                0x00000000100016b8      0x2c0 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x00000000100016b8                clocks_init
  .text.irq_set_enabled
-                0x00000000100016a4       0x24 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100016a4                irq_set_enabled
+                0x0000000010001978       0x24 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001978                irq_set_enabled
  .text.irq_get_vtable_handler
-                0x00000000100016c8       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100016c8                irq_get_vtable_handler
+                0x000000001000199c       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x000000001000199c                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x00000000100016d8       0x54 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100016d8                irq_set_exclusive_handler
+                0x00000000100019ac       0x54 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100019ac                irq_set_exclusive_handler
  .text.irq_remove_handler
-                0x000000001000172c      0x1bc CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x000000001000172c                irq_remove_handler
+                0x0000000010001a00      0x1bc CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001a00                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x00000000100018e8       0xb4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100018e8                irq_add_tail_to_free_list
+                0x0000000010001bbc       0xb4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001bbc                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x000000001000199c       0x24 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x000000001000199c                irq_init_priorities
+                0x0000000010001c70       0x24 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001c70                irq_init_priorities
  .text.pll_init
-                0x00000000100019c0       0xa4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x00000000100019c0                pll_init
+                0x0000000010001c94       0xa4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x0000000010001c94                pll_init
  .text.watchdog_start_tick
-                0x0000000010001a64       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x0000000010001a64                watchdog_start_tick
+                0x0000000010001d38       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000010001d38                watchdog_start_tick
  .text.xosc_init
-                0x0000000010001a74       0x28 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x0000000010001a74                xosc_init
+                0x0000000010001d48       0x28 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x0000000010001d48                xosc_init
  .text._out_char
-                0x0000000010001a9c       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010001d70       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.weak_raw_vprintf
-                0x0000000010001aac       0x30 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x0000000010001aac                weak_raw_vprintf
- .text          0x0000000010001adc       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x0000000010001d80       0x30 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010001d80                weak_raw_vprintf
+ .text          0x0000000010001db0       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x0000000010001aec       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010001aec                rom_func_lookup
+                0x0000000010001dc0       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010001dc0                rom_func_lookup
  .text.rom_data_lookup
-                0x0000000010001afc       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010001afc                rom_data_lookup
+                0x0000000010001dd0       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010001dd0                rom_data_lookup
  .text.rom_funcs_lookup
-                0x0000000010001b0c       0x3c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010001b0c                rom_funcs_lookup
+                0x0000000010001de0       0x3c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010001de0                rom_funcs_lookup
  .text.__wrap___aeabi_uidiv
-                0x0000000010001b48       0x4c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010001b48                __wrap___aeabi_uidiv
-                0x0000000010001b48                __wrap___aeabi_uidivmod
-                0x0000000010001b48                div_u32u32
-                0x0000000010001b48                divmod_u32u32
-                0x0000000010001b50                divmod_u32u32_unsafe
-                0x0000000010001b78                divmod_u32u32_savestate
+                0x0000000010001e1c       0x4c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000010001e1c                __wrap___aeabi_uidiv
+                0x0000000010001e1c                __wrap___aeabi_uidivmod
+                0x0000000010001e1c                div_u32u32
+                0x0000000010001e1c                divmod_u32u32
+                0x0000000010001e24                divmod_u32u32_unsafe
+                0x0000000010001e4c                divmod_u32u32_savestate
  .text.__aeabi_double_init
-                0x0000000010001b94       0xbc CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x0000000010001b94                __aeabi_double_init
+                0x0000000010001e68       0xbc CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000010001e68                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x0000000010001c50       0x2c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010001c50                double_table_shim_on_use_helper
+                0x0000000010001f24       0x2c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010001f24                double_table_shim_on_use_helper
  .text.__aeabi_float_init
-                0x0000000010001c7c       0x68 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x0000000010001c7c                __aeabi_float_init
+                0x0000000010001f50       0x68 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x0000000010001f50                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x0000000010001ce4       0x2c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x0000000010001ce4                float_table_shim_on_use_helper
- .text          0x0000000010001d10       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010001d10                __aeabi_mem_init
- .text.memset   0x0000000010001d20        0xc CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010001d20                __wrap_memset
- .text.memcpy   0x0000000010001d2c        0xc CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010001d2c                __wrap___aeabi_memcpy
-                0x0000000010001d2c                __wrap_memcpy
+                0x0000000010001fb8       0x2c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x0000000010001fb8                float_table_shim_on_use_helper
+ .text          0x0000000010001fe4       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010001fe4                __aeabi_mem_init
+ .text.memset   0x0000000010001ff4        0xc CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010001ff4                __wrap_memset
+ .text.memcpy   0x0000000010002000        0xc CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010002000                __wrap___aeabi_memcpy
+                0x0000000010002000                __wrap_memcpy
  .text.stdio_out_chars_no_crlf
-                0x0000000010001d38       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x000000001000200c       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_out_chars_crlf
-                0x0000000010001d48       0xac CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x000000001000201c       0xac CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_put_string
-                0x0000000010001df4       0xf8 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100020c8       0xf8 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x0000000010001eec       0xa4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010001eec                __wrap_putchar
+                0x00000000100021c0       0xa4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100021c0                __wrap_putchar
  .text.__wrap_puts
-                0x0000000010001f90       0x3c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010001f90                __wrap_puts
+                0x0000000010002264       0x3c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010002264                __wrap_puts
  .text.startup._retrieve_unique_id_on_boot
-                0x0000000010001fcc       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x00000000100022a0       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .text.flash_get_unique_id
-                0x0000000010001fdc       0x3c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-                0x0000000010001fdc                flash_get_unique_id
- .text          0x0000000010002018       0x68 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
-                0x0000000010002018                strlen
+                0x00000000100022b0       0x3c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x00000000100022b0                flash_get_unique_id
+ .text          0x00000000100022ec       0x68 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x00000000100022ec                strlen
  *(.fini)
- .fini          0x0000000010002080        0x4 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crti.o
-                0x0000000010002080                _fini
- *fill*         0x0000000010002084        0x4 
- .fini.__stub   0x0000000010002088       0x50 linker stubs
+ .fini          0x0000000010002354        0x4 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crti.o
+                0x0000000010002354                _fini
+ .fini.__stub   0x0000000010002358       0x50 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -1960,82 +1962,82 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x00000000100020d8        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x00000000100020d8                . = ALIGN (0x4)
+ .eh_frame      0x00000000100023a8        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x00000000100023a8                . = ALIGN (0x4)
 
-.glue_7         0x00000000100020d8        0x0
- .glue_7        0x00000000100020d8        0x0 linker stubs
+.glue_7         0x00000000100023a8        0x0
+ .glue_7        0x00000000100023a8        0x0 linker stubs
 
-.glue_7t        0x00000000100020d8        0x0
- .glue_7t       0x00000000100020d8        0x0 linker stubs
+.glue_7t        0x00000000100023a8        0x0
+ .glue_7t       0x00000000100023a8        0x0 linker stubs
 
-.vfp11_veneer   0x00000000100020d8        0x0
- .vfp11_veneer  0x00000000100020d8        0x0 linker stubs
+.vfp11_veneer   0x00000000100023a8        0x0
+ .vfp11_veneer  0x00000000100023a8        0x0 linker stubs
 
-.v4_bx          0x00000000100020d8        0x0
- .v4_bx         0x00000000100020d8        0x0 linker stubs
+.v4_bx          0x00000000100023a8        0x0
+ .v4_bx         0x00000000100023a8        0x0 linker stubs
 
-.iplt           0x00000000100020d8        0x0
- .iplt          0x00000000100020d8        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x00000000100023a8        0x0
+ .iplt          0x00000000100023a8        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x00000000100020d8       0xa8
+.rodata         0x00000000100023a8       0xa8
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.hardware_alarm_claim.str1.4
-                0x00000000100020d8       0x22 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x00000000100020fa        0x2 
+                0x00000000100023a8       0x22 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x00000000100023ca        0x2 
  .rodata.hard_assertion_failure.str1.4
-                0x00000000100020fc        0xc CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000100023cc        0xc CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata.panic.str1.4
-                0x0000000010002108       0x12 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x000000001000211a        0x2 
+                0x00000000100023d8       0x12 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x00000000100023ea        0x2 
  .rodata.__bi_44
-                0x000000001000211c        0xc CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100023ec        0xc CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x0000000010002128        0xc CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100023f8        0xc CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x0000000010002134        0xc CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010002404        0xc CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.str1.4
-                0x0000000010002140       0x3c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010002410       0x3c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.6106
-                0x000000001000217c        0x2 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010002180                . = ALIGN (0x4)
- *fill*         0x000000001000217e        0x2 
+                0x000000001000244c        0x2 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010002450                . = ALIGN (0x4)
+ *fill*         0x000000001000244e        0x2 
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x0000000010002180                . = ALIGN (0x4)
+                0x0000000010002450                . = ALIGN (0x4)
 
-.rel.dyn        0x0000000010002180        0x0
- .rel.iplt      0x0000000010002180        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x0000000010002450        0x0
+ .rel.iplt      0x0000000010002450        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000010002180                __exidx_start = .
+                0x0000000010002450                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x0000000010002180                __exidx_end = .
-                0x0000000010002180                . = ALIGN (0x4)
-                0x0000000010002180                __binary_info_start = .
+                0x0000000010002450                __exidx_end = .
+                0x0000000010002450                . = ALIGN (0x4)
+                0x0000000010002450                __binary_info_start = .
 
-.binary_info    0x0000000010002180       0x1c
+.binary_info    0x0000000010002450       0x1c
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr22
-                0x0000000010002180        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010002450        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x0000000010002184        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010002454        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x0000000010002188        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010002458        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x000000001000218c        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000245c        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x0000000010002190        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010002460        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x0000000010002194        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010002464        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr81
-                0x0000000010002198        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010002468        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
-                0x000000001000219c                __binary_info_end = .
-                0x000000001000219c                . = ALIGN (0x4)
-                0x000000001000219c                __etext = .
+                0x000000001000246c                __binary_info_end = .
+                0x000000001000246c                . = ALIGN (0x4)
+                0x000000001000246c                __etext = .
 
 .ram_vector_table
                 0x0000000020000000       0xc0
@@ -2044,7 +2046,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x0000000020000000       0xc0 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x0000000020000000                ram_vector_table
 
-.data           0x00000000200000c0      0x2a0 load address 0x000000001000219c
+.data           0x00000000200000c0      0x2a0 load address 0x000000001000246c
                 0x00000000200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2074,20 +2076,18 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  *(.rodata*)
                 0x00000000200002a8                . = ALIGN (0x4)
  *(.data*)
- .data.down_flag
-                0x00000000200002a8        0x4 CMakeFiles/dm542.dir/dm542.c.obj
-                0x00000000200002a8                down_flag
  .data.striped_spin_lock_num
-                0x00000000200002ac        0x1 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- *fill*         0x00000000200002ad        0x3 
+                0x00000000200002a8        0x1 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ *fill*         0x00000000200002a9        0x3 
  .data.default_alarm_pool
-                0x00000000200002b0       0x18 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000200002ac       0x18 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
  .data.default_alarm_pool_heap
-                0x00000000200002c8       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- .data          0x00000000200002d8       0x48 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
-                0x00000000200002d8                irq_handler_chain_slots
-                0x0000000020000308                irq_handler_chain_first_slot
-                0x0000000020000312                irq_handler_chain_remove_tail
+                0x00000000200002c4       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .data          0x00000000200002d4       0x48 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+                0x00000000200002d4                irq_handler_chain_slots
+                0x0000000020000304                irq_handler_chain_first_slot
+                0x000000002000030e                irq_handler_chain_remove_tail
+ *fill*         0x000000002000031c        0x4 
  .data.aeabi_bits_funcs
                 0x0000000020000320       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
                 0x0000000020000320                aeabi_bits_funcs
@@ -2134,35 +2134,35 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x0000000020000360                __data_end__ = .
 
 .tm_clone_table
-                0x0000000020000360        0x0 load address 0x000000001000243c
+                0x0000000020000360        0x0 load address 0x000000001000270c
  .tm_clone_table
                 0x0000000020000360        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x0000000020000360        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x0000000020000360        0x0 load address 0x000000001000243c
+.igot.plt       0x0000000020000360        0x0 load address 0x000000001000270c
  .igot.plt      0x0000000020000360        0x0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x0000000020000360        0x0 load address 0x000000001000243c
+                0x0000000020000360        0x0 load address 0x000000001000270c
                 0x0000000020000360                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x0000000020040000        0x0 load address 0x000000001000243c
+.scratch_x      0x0000000020040000        0x0 load address 0x000000001000270c
                 0x0000000020040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x0000000020040000                . = ALIGN (0x4)
                 0x0000000020040000                __scratch_x_end__ = .
-                0x000000001000243c                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x000000001000270c                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x0000000020041000        0x0 load address 0x000000001000243c
+.scratch_y      0x0000000020041000        0x0 load address 0x000000001000270c
                 0x0000000020041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x0000000020041000                . = ALIGN (0x4)
                 0x0000000020041000                __scratch_y_end__ = .
-                0x000000001000243c                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x000000001000270c                __scratch_y_source__ = LOADADDR (.scratch_y)
 
-.bss            0x0000000020000360      0x4dc
+.bss            0x0000000020000360      0x4e0
                 0x0000000020000360                . = ALIGN (0x4)
                 0x0000000020000360                __bss_start__ = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
@@ -2179,46 +2179,49 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
                 0x00000000200005b4       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
  .bss.default_alarm_pool_heap_nodes
                 0x00000000200005c4       0x30 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
- .bss.drivers   0x00000000200005f4        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .bss.filter    0x00000000200005f8        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .bss.down_flag
+                0x00000000200005f4        0x4 CMakeFiles/dm542.dir/dm542.c.obj
+                0x00000000200005f4                down_flag
+ .bss.drivers   0x00000000200005f8        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .bss.filter    0x00000000200005fc        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .bss.lazy_vsnprintf
-                0x00000000200005fc        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000020000600        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .bss.moving_flag
-                0x0000000020000600        0x4 CMakeFiles/dm542.dir/dm542.c.obj
-                0x0000000020000600                moving_flag
- .bss.pools     0x0000000020000604       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020000604        0x4 CMakeFiles/dm542.dir/dm542.c.obj
+                0x0000000020000604                moving_flag
+ .bss.pools     0x0000000020000608       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
  .bss.retrieved_id
-                0x0000000020000614        0x8 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000020000618        0x8 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .bss.sf_clz_func
-                0x000000002000061c        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x000000002000061c                sf_clz_func
+                0x0000000020000620        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000020000620                sf_clz_func
  .bss.sleep_notifier
-                0x0000000020000620        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020000624        0x4 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/common/pico_time/time.c.obj
  .bss.target_hi
-                0x0000000020000624       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .bss.up_flag   0x0000000020000634        0x4 CMakeFiles/dm542.dir/dm542.c.obj
-                0x0000000020000634                up_flag
+                0x0000000020000628       0x10 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .bss.up_flag   0x0000000020000638        0x4 CMakeFiles/dm542.dir/dm542.c.obj
+                0x0000000020000638                up_flag
  .bss.boot2_copyout_valid
-                0x0000000020000638        0x1 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .bss.claimed   0x0000000020000639        0x1 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x000000002000063c        0x1 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .bss.claimed   0x000000002000063d        0x1 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .bss.irq_hander_chain_free_slot_head
-                0x000000002000063a        0x1 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x000000002000063e        0x1 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .bss.timer_callbacks_pending
-                0x000000002000063b        0x1 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x000000002000063f        0x1 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  *(COMMON)
- COMMON         0x000000002000063c      0x100 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x000000002000063c                sd_table
- COMMON         0x000000002000073c      0x100 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x000000002000073c                sf_table
-                0x000000002000083c                . = ALIGN (0x4)
-                0x000000002000083c                __bss_end__ = .
+ COMMON         0x0000000020000640      0x100 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000020000640                sd_table
+ COMMON         0x0000000020000740      0x100 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x0000000020000740                sf_table
+                0x0000000020000840                . = ALIGN (0x4)
+                0x0000000020000840                __bss_end__ = .
 
-.heap           0x000000002000083c      0x800
-                0x000000002000083c                __end__ = .
-                0x000000002000083c                end = __end__
+.heap           0x0000000020000840      0x800
+                0x0000000020000840                __end__ = .
+                0x0000000020000840                end = __end__
  *(.heap*)
- .heap          0x000000002000083c      0x800 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
-                0x000000002000103c                __HeapLimit = .
+ .heap          0x0000000020000840      0x800 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+                0x0000000020001040                __HeapLimit = .
 
 .stack1_dummy   0x0000000020040000        0x0
  *(.stack1*)
@@ -2227,8 +2230,8 @@ LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp
  *(.stack*)
  .stack         0x0000000020041000      0x800 CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x000000001000243c        0x0
-                0x000000001000243c                __flash_binary_end = .
+.flash_end      0x000000001000270c        0x0
+                0x000000001000270c                __flash_binary_end = .
                 0x0000000020040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x0000000020041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x0000000020042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -2307,7 +2310,7 @@ LOAD CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo
 LOAD CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 LOAD CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 LOAD CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-LOAD /tmp/ccJ4zf5K.o
+LOAD /tmp/ccw6Ccow.o
 LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2397,7 +2400,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000000000000576       0x2c CMakeFiles/dm542.dir/home/pi/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
  .ARM.attributes
-                0x00000000000005a2       0x22 /tmp/ccJ4zf5K.o
+                0x00000000000005a2       0x22 /tmp/ccw6Ccow.o
  .ARM.attributes
                 0x00000000000005c4       0x1e /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
