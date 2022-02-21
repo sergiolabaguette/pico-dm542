@@ -34,10 +34,10 @@ static void setup_pins_out(int pin1, int pin2, int pin3) {
 static void setup_pins_in(int pin1, int pin2) {
     gpio_init(pin1);
     gpio_init(pin2);
-
+    /* set gpio input */
     gpio_set_dir(pin1, 0);
     gpio_set_dir(pin2, 0);
-
+    /* enable pull-up resistor */
     gpio_pull_up(pin1);
     gpio_pull_up(pin2);
 }
@@ -50,15 +50,18 @@ static void step_once(int stepGPIO, int delay) {
     sleep_us(delay);
 }
 
-static void set_direction(int direction){
+static int set_direction(int direction){
     /* 1 for UP, 0 for DOWN */
     enum Setup gpio_pin_dir = DIR;
     gpio_put(gpio_pin_dir, direction);
     /* DIR signal must be ahead of PUL by 50 ms to ensure correct direction */
     sleep_ms(50);
+
+    return 0;
 }
 
-static int full_rotation (int gpio_pin_ena, int gpio_pin_pul, int step_delay, int steps_to_move){
+static int full_rotation (int gpio_pin_ena, int gpio_pin_pul, int step_delay, int steps_to_move, int direction){
+    set_direction(direction);
     /* false enables driver, true disables driver */
     gpio_put(gpio_pin_ena, 0);
     for (size_t i = 0; i < steps_to_move; ++i){
@@ -76,8 +79,7 @@ static void handle_input(int gpio_pin_ena, int gpio_pin_pul, int step_delay, int
         if( gpio_get(pin_up) == false && up_flag == false && moving_flag == false) {
             moving_flag = true;
             down_flag = false;
-            set_direction(1);
-            full_rotation(gpio_pin_ena,gpio_pin_pul,step_delay,step_count);
+            full_rotation(gpio_pin_ena,gpio_pin_pul,step_delay,step_count,1);
             busy_wait_ms(50);
             up_flag = true;
             moving_flag = false;
@@ -87,8 +89,7 @@ static void handle_input(int gpio_pin_ena, int gpio_pin_pul, int step_delay, int
         if( gpio_get(pin_down) == false && down_flag == false && moving_flag == false ) {
             moving_flag = true;
             up_flag = false;
-            set_direction(0);
-            full_rotation(gpio_pin_ena,gpio_pin_pul,step_delay,step_count);
+            full_rotation(gpio_pin_ena,gpio_pin_pul,step_delay,step_count,0);
             busy_wait_ms(50);
             down_flag = true;
             moving_flag = false;
