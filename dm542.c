@@ -10,7 +10,7 @@ enum Setup {
     BTN_UP = 5,
     BTN_DOWN = 3,
     /* Delay in us, i.e. 1ms = 1000 us. Doesn't work under 280 */
-    DELAY = 280,
+    DELAY = 290,
     /* Number of steps, 400 steps for full rotation */
     STEPS = 30000,
 };
@@ -54,8 +54,8 @@ static void set_direction(int direction){
     /* 1 for UP, 0 for DOWN */
     enum Setup gpio_pin_dir = DIR;
     gpio_put(gpio_pin_dir, direction);
-    /* DIR signal must be ahead of PUL by 500 us to ensure correct direction */
-    busy_wait_us(500);
+    /* DIR signal must be ahead of PUL by 50 ms to ensure correct direction */
+    sleep_ms(50);
 }
 
 static int full_rotation (int gpio_pin_ena, int gpio_pin_pul, int step_delay, int steps_to_move){
@@ -78,6 +78,7 @@ static void handle_input(int gpio_pin_ena, int gpio_pin_pul, int step_delay, int
             down_flag = false;
             set_direction(1);
             full_rotation(gpio_pin_ena,gpio_pin_pul,step_delay,step_count);
+            busy_wait_ms(50);
             up_flag = true;
             moving_flag = false;
             
@@ -88,6 +89,7 @@ static void handle_input(int gpio_pin_ena, int gpio_pin_pul, int step_delay, int
             up_flag = false;
             set_direction(0);
             full_rotation(gpio_pin_ena,gpio_pin_pul,step_delay,step_count);
+            busy_wait_ms(50);
             down_flag = true;
             moving_flag = false;
         }        
