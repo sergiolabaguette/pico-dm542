@@ -9,10 +9,12 @@ enum Setup {
     ENA = 14,
     BTN_UP = 5,
     BTN_DOWN = 3,
+    SPDT_TOP = 16,
     /* Delay in us, i.e. 1ms = 1000 us. Doesn't work under 280 */
     DELAY = 290,
     /* Number of steps, 400 steps for full rotation */
     STEPS = 30000,
+
 };
 
 int up_flag = 0, down_flag = 0, moving_flag = 0;
@@ -82,8 +84,7 @@ static void handle_input(int gpio_pin_ena, int gpio_pin_pul, int step_delay, int
             full_rotation(gpio_pin_ena,gpio_pin_pul,step_delay,step_count,1);
             busy_wait_ms(50);
             up_flag = true;
-            moving_flag = false;
-            
+            moving_flag = false;            
         }
 
         if( gpio_get(pin_down) == false && down_flag == false && moving_flag == false ) {
@@ -105,14 +106,29 @@ int main() {
     enum Setup gpio_pin_ena = ENA;
     enum Setup btn_pin_up = BTN_UP;
     enum Setup btn_pin_down = BTN_DOWN;
+    enum Setup top_switch = SPDT_TOP;
+
+    /* SPDT test */
+    gpio_init(top_switch);
+    gpio_set_dir(top_switch, 0);
+    gpio_pull_up(top_switch);
+    int led = 25;
+    gpio_init(led);
+    gpio_set_dir(led, 1);
 
     /* always run setup_pins before anything else */
     setup_pins_out(gpio_pin_pul, gpio_pin_dir, gpio_pin_ena);
     setup_pins_in(btn_pin_up, btn_pin_down);
+
     /* button logic */
     while(1){
-        handle_input(gpio_pin_ena, gpio_pin_pul, step_delay, step_count, btn_pin_up, btn_pin_down);
+        /*handle_input(gpio_pin_ena, gpio_pin_pul, step_delay, step_count, btn_pin_up, btn_pin_down);*/
+        if(gpio_get(top_switch) == 0){
+            gpio_put(led, 0);
+        } else {
+            gpio_put(led, 1);
+        }
     }
-    
+   
     return 0;
 }
