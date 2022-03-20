@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20220309-0131-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.18.4"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Linux"
+	Hostname="raspberrypi"
+	OSRelease="5.10.92-v8+"
+	OSVersion="#1514 SMP PREEMPT Mon Jan 17 17:39:38 GMT 2022"
+	OSPlatform="aarch64"
+	Is64Bits="1"
+	VendorString=""
+	VendorID="Unknown Manufacturer"
+	FamilyID="8"
+	ModelID="0"
+	ProcessorCacheSize="0"
+	NumberOfLogicalCPU="4"
+	NumberOfPhysicalCPU="1"
+	TotalVirtualMemory="99"
+	TotalPhysicalMemory="7377"
+	LogicalProcessorsPerPhysical="4"
+	ProcessorClockFrequency="0"
+	>
+	<Testing>
+		<StartDateTime>Mar 09 02:31 CET</StartDateTime>
+		<StartTestTime>1646789501</StartTestTime>
+		<TestList/>
+		<EndDateTime>Mar 09 02:31 CET</EndDateTime>
+		<EndTestTime>1646789501</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
