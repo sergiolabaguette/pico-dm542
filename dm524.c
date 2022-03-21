@@ -32,11 +32,9 @@ const int *p_DIRECTION = &rotation_direction;
 
 
 static void setup_driver_pins(){
-    int driver_gpio_pins[] = {*p_PUL, *p_DIR, *p_ENA};
-    int i;
-    int n;
-    n = sizeof driver_gpio_pins / sizeof *driver_gpio_pins;
-    for(i = 0; i < n; ++i){
+    int driver_gpio_pins[] = {*p_PUL, *p_DIR, *p_ENA};    
+    size_t n = sizeof driver_gpio_pins / sizeof *driver_gpio_pins;
+    for(size_t i = 0; i < n; ++i){
         gpio_init(driver_gpio_pins[i]);
         gpio_set_dir(driver_gpio_pins[i], true);
         gpio_pull_up(driver_gpio_pins[i]);
@@ -51,8 +49,7 @@ static void single_step(){
 };
 
 static void full_revolution(){
-    int i;
-    for(i = 0; i < *p_STEPS; ++i){
+    for(size_t i = 0; i < *p_STEPS; ++i){
         single_step();
     };
 };
@@ -64,8 +61,7 @@ static void set_direction(){
 };
 
 static void ease_in(){
-    int i;
-    for(i = 0; i < 400; ++i){
+    for(size_t i = 0; i < 400; ++i){
         STEP_DELAY = ease_arr[i];
         single_step();
     };
@@ -73,10 +69,22 @@ static void ease_in(){
     STEP_DELAY = 300;
 };
 
+static void ease_out(){
+    for (size_t i = 399; i > 0; i--){
+        STEP_DELAY = ease_arr[i];
+        single_step();
+    };
+};
+
 int main(){
     setup_driver_pins();
     set_direction();
     ease_in();
-    full_revolution();
+    for (size_t i = 0; i < 4; i++)
+    {
+        full_revolution();
+    }   
+    ease_out();
+    
     return 0;
 };
