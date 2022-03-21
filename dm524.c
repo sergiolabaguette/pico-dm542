@@ -40,28 +40,28 @@ void setup_driver_pins(){
         gpio_init(driver_gpio_pins[i]);
         gpio_set_dir(driver_gpio_pins[i], true);
         gpio_pull_up(driver_gpio_pins[i]);
-    }
-}
+    };
+};
 
 static void single_step(){
     gpio_put(*p_PUL, true);
     busy_wait_us(*p_DELAY);
     gpio_put(*p_PUL, false);
     busy_wait_us(*p_DELAY);
-}
+};
 
 static void full_revolution(){
     int i;
     for(i = 0; i < *p_STEPS; ++i){
         single_step();
-    }
-}
+    };
+};
 
 static void set_direction(){
     busy_wait_ms(25);
     gpio_put(*p_DIR, *p_DIRECTION);
     busy_wait_ms(25);
-}
+};
 
 static void ease_in(){
     int i;
@@ -71,7 +71,7 @@ static void ease_in(){
     };
 
     STEP_DELAY = 300;
-}
+};
 
 int main(){
     setup_driver_pins();
@@ -79,4 +79,4 @@ int main(){
     ease_in();
     full_revolution();
     return 0;
-}
+};
