@@ -13,7 +13,7 @@ const int GPIO_PUL = 19;
 const int GPIO_DIR = 20;
 const int GPIO_ENA = 21;
 // dont go under 300
-int STEP_DELAY = 300;
+static int STEP_DELAY = 300;
 const int STEPS_PER_REV = 400;
 // 1 for LEFT (UP), 0 for RIGHT (DOWN)
 int rotation_direction = 0;
@@ -31,7 +31,7 @@ const int *p_STEPS = &STEPS_PER_REV;
 const int *p_DIRECTION = &rotation_direction;
 
 
-void setup_driver_pins(){
+static void setup_driver_pins(){
     int driver_gpio_pins[] = {*p_PUL, *p_DIR, *p_ENA};
     int i;
     int n;
