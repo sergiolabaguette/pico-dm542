@@ -104,17 +104,14 @@ static void travel(int rotations, bool direction){
         full_revolution();
     };
     ease_out();
-}
-
-static int handle_button_input() {
-
-}
+};
 
 int main() {
-    setup_driver_pins();
-    stdio_init_all();
 
     int test = 0;
+
+    stdio_init_all();
+    setup_driver_pins();
 
     while(test < 2){
         travel(10, false);
@@ -124,7 +121,5 @@ int main() {
         test++;
     };
 
-
-    
     return 0;
 };
