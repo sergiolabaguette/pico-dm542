@@ -85,7 +85,6 @@ static void ease_in(){
     for(size_t i = 0; i < *p_STEPS; ++i){
         STEP_DELAY = ease_arr[i];
         single_step();
-        single_step();
     };
 
     STEP_DELAY = 300;
@@ -95,13 +94,12 @@ static void ease_out(){
     for (size_t i = *p_STEPS; i > 1; i--){    
         STEP_DELAY = ease_arr[i];
         single_step();
-        single_step();
     }; 
 };
 
 static void travel(int rotations, bool direction){
-    ease_in();
     set_direction(direction);
+    ease_in();
     for (size_t i = 0; i < rotations; ++i){
         full_revolution();
     };
@@ -112,14 +110,17 @@ static int handle_button_input() {
 
 }
 
-int main(){
+int main() {
     setup_driver_pins();
     stdio_init_all();
 
     int test = 0;
 
-    while(test > 2){
-        travel(70, 1);
+    while(test < 2){
+        travel(10, false);
+        busy_wait_ms(200);
+        travel(10, true);
+        busy_wait_ms(200);
         test++;
     };
 
