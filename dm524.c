@@ -91,8 +91,8 @@ static void ease_in(){
 };
 
 static void ease_out(){
-    for (size_t i = *p_STEPS; i > 1; i--){    
-        STEP_DELAY = ease_arr[i];
+    for (int j = 399; j > 0; --j){    
+        STEP_DELAY = ease_arr[j];
         single_step();
     }; 
 };
@@ -100,7 +100,7 @@ static void ease_out(){
 static void travel(int rotations, bool direction){
     set_direction(direction);
     ease_in();
-    for (size_t i = 0; i < rotations; ++i){
+    for (size_t k = 0; k < rotations; ++k){
         full_revolution();
     };
     ease_out();
@@ -108,18 +108,14 @@ static void travel(int rotations, bool direction){
 
 int main() {
 
-    int test = 0;
-
     stdio_init_all();
     setup_driver_pins();
-
-    while(test < 2){
-        travel(10, false);
+    for (size_t g = 0; g < 10; g++)
+    {
+        travel(55,false);
         busy_wait_ms(200);
-        travel(10, true);
+        travel(55, true);
         busy_wait_ms(200);
-        test++;
     };
-
     return 0;
 };
