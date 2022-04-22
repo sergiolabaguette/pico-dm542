@@ -13,6 +13,8 @@ pico/stdlib.h
 /home/pi/pico/dm524/pico/stdlib.h
 hardware/timer.h
 /home/pi/pico/dm524/hardware/timer.h
+pico/time.h
+/home/pi/pico/dm524/pico/time.h
 
 /home/pi/pico/pico-sdk/src/boards/include/boards/pico.h
 
